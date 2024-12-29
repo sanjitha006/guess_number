@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>guess game</title>
+    </head>
+    <body style="background-color:rgb(213, 182, 213);">
+        <center><h1 style="color:rgb(12, 12, 13) ">Guess the number from 1 to 10</h1>
+            <hr>
+            <br><br><br>
+        <input id="in" ;Type="number"; style="color:rgb(231, 61, 231)">
+        <button onclick="gen()" ; style="background-color:rgb(83, 12, 83);color:beige">check</button>
+        <p id="out">Heyy you wanna test your luck?!😺</p>
+    </center>
+        <p style="margin-top: 300px;margin-left:1000px;color:brown">made by sanjitha</p>
+        <script>
+            function gen(){
+                var n=Math.random();
+                var b=Math.floor(n*10);
+                var xx=((document.getElementById("in")));
+                var x=Number(xx.value);
+                var pp=(document.getElementById("out"));
+                console.log(b);
+                console.log(x);
+                console.log(pp);
+                if(x!=b){
+                    pp.textContent="You lost,oops😿";
+                }
+                else{
+                    pp.textContent="great!!you guessed❤️";
+                }
+
+
+
+
+            }
+
+
+        </script>
+
+
+    </body>
+
+</html>
